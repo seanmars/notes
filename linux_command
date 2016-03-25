@@ -19,3 +19,8 @@ If you are using Debian / Mint / Ubuntu Linux, type the following apt-get comman
 $ sudo apt-get install tree
 
 ==========
+
+# apt
+
+Search packge
+apt-cache search packge
