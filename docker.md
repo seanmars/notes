@@ -5,5 +5,8 @@
 
 **[Docker] run with port**
 
-    docker run -ti -p 80:80 dockername
-    docker run -ti -p 127.0.0.1:80:80 dockername
+    docker run -tid -p 80:80 dockername
+
+**[Docker] run with data volume**
+
+    docker run -v /Users/<path>:/<container path> 
