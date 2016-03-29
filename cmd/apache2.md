@@ -2,7 +2,7 @@
 
     apache2ctl -M
 
-**start/stop/status**
+**start/stop/restart/status/reload**
 
     // start
     // stop
