@@ -26,8 +26,3 @@ Search packge
 apt-cache search packge
 
 ==========
-
-# apache2
-
-check status
-/etc/init.d/apache2 status
