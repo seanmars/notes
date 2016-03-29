@@ -1,7 +1,7 @@
 **[Docker machine][Windows] change localtion**
 
     export MACHINE_STORAGE_PATH=yourpath
-    docker-machine create --driver=virtualbox yourmachinename
+    docker-machine create -d virtualbox yourmachinename
 
 **[Docker] run with port**
 
