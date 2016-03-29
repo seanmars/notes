@@ -1,6 +1,7 @@
 **Xdebug setting**
 
-    /etc/php5/apache2/php.ini
+edit the file /etc/php5/apache2/php.ini
+
     display_errors = On
     display_startup_errors = On
     html_errors = On
