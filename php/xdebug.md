@@ -11,6 +11,6 @@ edit the file /etc/php5/apache2/php.ini
 
     // add below variable and value
     [xdebug]
-    zend_extension="/usr/lib/php5/20090626/xdebug.so"
+    zend_extension="/usr/lib/php5/yyyymmdd/xdebug.so"
     xdebug.profiler_enable = 1
     xdebug.profiler_output_dir = /tmp/profiler
