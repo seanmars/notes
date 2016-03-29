@@ -1,2 +1,0 @@
-**check which apache modules are enabled/installed**
-apache2ctl -M
