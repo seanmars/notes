@@ -5,6 +5,7 @@ edit the file:
 - /etc/php5/apache2/php.ini
 - /etc/php5/cli/php.ini
 
+
     // change to On
     display_errors = On
     // change to On
