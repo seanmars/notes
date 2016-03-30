@@ -7,7 +7,12 @@
 
     use virtualbox GUI to add shared folder(sharedname, path) and make it automount, permanent
     // after start docker-machine
-    docker-machine ssh default 'sudo mkdir -p /dir ; sudo mount.vboxsf sharedname /dir'
+    docker-machine ssh default 'sudo mkdir -p /dir ; sudo mount -t vboxsf sharedname /dir'
+    // or your can create and edit bootlocal.sh
+    sudo vi /var/lib/boot2docker/bootlocal.sh
+    // add command below
+    sudo mkdir -p /yourfoldername
+    sudo mount -t vboxsf sharedname /yourfoldername
 
 **[Docker] run with port**
 
