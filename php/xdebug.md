@@ -20,5 +20,6 @@ In /etc/php5/cli/php.ini
     html_errors = On
 
     [xdebug]
+    ; zend_extension = "/usr/lib/php5/yyyymmdd/xdebug.so"
     xdebug.profiler_enable = 1
     xdebug.profiler_output_dir = /tmp/profiler
