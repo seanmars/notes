@@ -20,3 +20,7 @@ Some scenarios:
     	
     	return $next($request);
     }
+
+##### How to get url parameters at middleware
+
+	$request->parameterName;
