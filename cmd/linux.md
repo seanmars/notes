@@ -18,6 +18,8 @@
 |  ( ) | 在中間為子 shell 的起始與結束                                        |
 |  { } | 在中間為命令區塊的組合！                                             |
 
+ref: [鳥哥的 Linux 私房菜](http://linux.vbird.org/linux_basic/0320bash.php#settings_wildcard)
+
 # diff
   -q   Report only whether the files differ, not the details of the differences.
   -r   When comparing directories, recursively compare any subdirectories found.
