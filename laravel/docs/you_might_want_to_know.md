@@ -1,10 +1,10 @@
 # You might want to know
 
-### Service Container
+### #Service Container
 
 The Laravel service container is a powerful tool for managing class dependencies and performing dependency injection. Dependency injection is a fancy phrase that essentially means this: class dependencies are "injected" into the class via the constructor or, in some cases, "setter" methods.
 
-### Contracts
+### #Contracts
 
 Laravel's Contracts are a set of interfaces that define the core services provided by the framework. For example, a `Illuminate\Contracts\Queue\Queue` contract defines the methods needed for queueing jobs, while the `Illuminate\Contracts\Mail\Mailer` contract defines the methods needed for sending e-mail.
 
@@ -50,6 +50,6 @@ All of the Laravel contracts live in their own GitHub repository. This provides 
 | Illuminate\Contracts\View\Factory             | View::make()      |
 | Illuminate\Contracts\View\View                |                   |
 
-### Facades
+### #Facades
 
 Facades provide a "static" interface to classes that are available in the application's service container. Laravel ships with many facades, and you have probably been using them without even knowing it! Laravel "facades" serve as "static proxies" to underlying classes in the service container, providing the benefit of a terse, expressive syntax while maintaining more testability and flexibility than traditional static methods.
