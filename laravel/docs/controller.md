@@ -6,6 +6,13 @@
 - Middleware may be assigned to the controller's routes
 - Route caching does not work with Closure based routes. To use route caching, you must convert any Closure routes to use controller classes.
 
+>
+
+	// generate a route cache
+	php artisan route:cache
+	// clear route cache
+	php artisan route:clear
+
 ### Route to controller
 
 	Route::get('user/{id}', 'UserController@showProfile');
@@ -232,5 +239,33 @@ UserController.js
 
 ### Dependency Injection
 
+- Use type-hint to injection.
+
 ##### Constructor Injection
+
+	public function __construct(UserRepository $users)
+	{
+		$this->users = $users;
+	}
+
 ##### Method Injection
+
+    public function store(Request $request)
+    {
+        $name = $request->input('name');
+    }
+
+##### Injection with route parameter
+
+- Just simply list your route arguments after your other dependencies.
+
+>
+
+	Route::put('user/{id}', 'UserController@update');
+
+>
+
+	public function update(Request $request, $id)
+    {
+        //
+    }
