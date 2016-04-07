@@ -12,6 +12,8 @@ Each contract has a corresponding implementation provided by the framework. For 
 
 All of the Laravel contracts live in their own GitHub repository. This provides a quick reference point for all available contracts, as well as a single, decoupled package that may be utilized by package developers.
 
+##### Contract Reference :
+
 | Contract                                      | References Facade |
 |-----------------------------------------------|-------------------|
 | Illuminate\Contracts\Auth\Factory             | Auth              |
@@ -48,4 +50,6 @@ All of the Laravel contracts live in their own GitHub repository. This provides 
 | Illuminate\Contracts\View\Factory             | View::make()      |
 | Illuminate\Contracts\View\View                |                   |
 
-###
+### Facades
+
+Facades provide a "static" interface to classes that are available in the application's service container. Laravel ships with many facades, and you have probably been using them without even knowing it! Laravel "facades" serve as "static proxies" to underlying classes in the service container, providing the benefit of a terse, expressive syntax while maintaining more testability and flexibility than traditional static methods.
