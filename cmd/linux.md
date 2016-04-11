@@ -91,6 +91,6 @@ Show Running Processes
 
 >
 
-	killall processname
+	$ killall processname
 	
 	
