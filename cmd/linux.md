@@ -65,3 +65,32 @@ Show Running Processes
 >
 
 	$ ps aux | less
+
+# #kill
+	
+	-2: 這個訊號與鍵盤輸入 Ctrl + C 是同樣的動作，也是通知程式停止執行。
+    -9: 立刻強制停止程式執行。
+    -15: 以正常的程序通知程式停止執行，這是預設的訊號。
+    -l: 列出所有可用的訊號。
+
+>
+
+	$ kill PID
+
+# #killall
+
+    -e, --exact：在程式名稱完全比對成功時，才中止程式。如果程式的名稱超過 15 個字元，其餘的字元在系統中會被捨去，這時候在預設的狀況下，killall 會把所有符合前 15 個字元的程式都中止掉，如果加上 -e 參數的話，killall 指令就會跳過這種名稱過長的程式。
+    -I, --ignore-case：在比對程式名稱時，英文大小寫視為相同（ignore case）。
+    -i, --interactive：在中止程式之前，先以互動式的方式詢問。
+    -l, --list：列出所有的訊號（signal）名稱。
+    -r, --regexp：使用常規表示法（regular expression）指定程式名稱。
+    -s, --signal：指定送出的訊號（signal）。
+    -u, --user：只中止指定使用者所執行的程式。
+    -o, --older-than：指定程式的開始執行時間點，必須在此時間點之前。
+    -y, --younger-than：指定程式的開始執行時間點，必須在此時間點之後。
+
+>
+
+	killall processname
+	
+	
