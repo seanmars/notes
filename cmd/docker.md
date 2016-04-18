@@ -10,7 +10,7 @@
     // after start docker-machine
     docker-machine ssh default 'sudo mkdir -p /dir ; sudo mount -t vboxsf sharedname /dir'
     
-    // Note: On OS X, ssh into docker machine, then export lang to utf8
+    // NOTE: Must set the lang, otherwise it will fail to save file to bootlocal.sh(encoding)
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
     // or your can create and edit bootlocal.sh
