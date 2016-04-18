@@ -19,7 +19,7 @@
     sudo mkdir -p /yourfoldername
     sudo mount -t vboxsf sharedname /yourfoldername
     
-**[Docker machine][into docker]
+**[Docker machine] into docker**
 
     docker exec -ti dockernameorid bash
 
