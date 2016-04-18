@@ -18,11 +18,15 @@
     // add command below
     sudo mkdir -p /yourfoldername
     sudo mount -t vboxsf sharedname /yourfoldername
+    
+**[Docker machine][into docker]
 
-**[Docker] run with port**
+    docker exec -ti dockernameorid bash
+
+**[Docker machine] run with port**
 
     docker run -tid -p 80:80 dockername
 
-**[Docker] run with data volume**
+**[Docker machine] run with data volume**
 
     docker run -v /Users/<path>:/<container path> 
