@@ -68,7 +68,7 @@ Show Running Processes
 
 # #kill
 	
-	-2: 這個訊號與鍵盤輸入 Ctrl + C 是同樣的動作，也是通知程式停止執行。
+    -2: 這個訊號與鍵盤輸入 Ctrl + C 是同樣的動作，也是通知程式停止執行。
     -9: 立刻強制停止程式執行。
     -15: 以正常的程序通知程式停止執行，這是預設的訊號。
     -l: 列出所有可用的訊號。
@@ -91,6 +91,11 @@ Show Running Processes
 
 >
 
-	$ killall processname
+    $ killall processname
 	
-	
+# #How to fix the GPG error “NO_PUBKEY”?
+
+reference: [nodesource/distributions/issues/13](https://github.com/nodesource/distributions/issues/13)
+
+    apt-get update && apt-get install curl apt-transport-https -y
+    curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
