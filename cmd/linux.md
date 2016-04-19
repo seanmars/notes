@@ -95,6 +95,6 @@ Show Running Processes
 	
 # #How to fix the GPG error “NO_PUBKEY”?
 
-reference: [nodesource/distributions/issues/13](https://github.com/nodesource/distributions/issues/13)
+reference: [GPG error: http://ppa.launchpad.net precise Release: The following signatures couldn't be verified because the public key is not available](http://askubuntu.com/questions/308760/w-gpg-error-http-ppa-launchpad-net-precise-release-the-following-signatures)
 
     $ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <key>
