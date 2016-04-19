@@ -97,5 +97,4 @@ Show Running Processes
 
 reference: [nodesource/distributions/issues/13](https://github.com/nodesource/distributions/issues/13)
 
-    apt-get update && apt-get install curl apt-transport-https -y
-    curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+    $ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <key>
