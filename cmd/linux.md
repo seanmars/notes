@@ -98,3 +98,7 @@ Show Running Processes
 reference: [GPG error: http://ppa.launchpad.net precise Release: The following signatures couldn't be verified because the public key is not available](http://askubuntu.com/questions/308760/w-gpg-error-http-ppa-launchpad-net-precise-release-the-following-signatures)
 
     $ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <key>
+
+# apt-get
+
+apt-cache search
