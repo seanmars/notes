@@ -101,4 +101,20 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 
 # apt-get
 
-apt-cache search
+	apt-cache search
+
+# rsync
+
+	# recursive
+	rsync -r source/ destination/
+	# delete extraneous files from destination dirs
+	rsync --delete  source/ destination/
+	# exclude from file
+	rsync --exclude-from 'exclude-list.txt' source/ destination/
+	# exclude-list.txt
+	dir # specific directory
+	dir* # multiple directories that matches a pattern
+	/dirA/dirB/test.txt # path relative
+	test.txt # specific file
+	*.txt # specific file type
+	
