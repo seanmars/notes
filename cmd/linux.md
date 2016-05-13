@@ -117,4 +117,5 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 	/dirA/dirB/test.txt # path relative
 	test.txt # specific file
 	*.txt # specific file type
-	
+	# show progress during transfer
+	rsync --progress source/ destination/
