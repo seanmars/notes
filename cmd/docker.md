@@ -23,10 +23,11 @@
 
     docker exec -ti dockernameorid bash
 
-**[Docker machine] run with port**
+**[Docker machine] run**
 
+    # with port
     docker run -tid -p 80:80 dockername
-
-**[Docker machine] run with data volume**
-
-    docker run -v /Users/<path>:/<container path> 
+    # with volume
+    docker run -v /Users/<path>:/<container path>
+    # e.g.
+    docker run -ti -p 80:80 -p 443:443 -p 3306:3306 -v /workspace:/var/www/html/ --name=dev ubuntu14.04:0.14
