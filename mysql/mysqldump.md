@@ -1,3 +1,7 @@
+Reference:
+
+[Mysqldump with Modern MySQL](https://serversforhackers.com/mysqldump-with-modern-mysql)
+
 ```shell
 mysqldump some_database > some_database.sql
 
