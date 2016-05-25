@@ -119,3 +119,10 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 	*.txt # specific file type
 	# show progress during transfer
 	rsync --progress source/ destination/
+
+# groups
+
+	# list user in groups
+	groups userName-Here
+	# List all members of a group using /etc/group file
+	grep 'grpup-name-here' /etc/group
