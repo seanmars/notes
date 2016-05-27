@@ -51,6 +51,7 @@ If you are using Debian / Mint / Ubuntu Linux, type the following apt-get comman
 Search packge
 
 	$ apt-cache search packge
+	$ sudo apt-get purge --auto-remove <package-name>
 
 ==========
 
