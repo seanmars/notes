@@ -22,6 +22,11 @@ ref: [鳥哥的 Linux 私房菜](http://linux.vbird.org/linux_basic/0320bash.php
 
 ==========
 
+# #uname
+  -a, --all print all information
+  
+	$ uname -a
+
 # #diff
   -q   Report only whether the files differ, not the details of the differences.
   -r   When comparing directories, recursively compare any subdirectories found.
@@ -48,10 +53,7 @@ If you are using Debian / Mint / Ubuntu Linux, type the following apt-get comman
 
 # #apt
 
-Search packge
 
-	$ apt-cache search packge
-	$ sudo apt-get purge --auto-remove <package-name>
 
 ==========
 
@@ -100,11 +102,13 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 
     $ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys <key>
 
-# apt-get
+# #apt-get
 
-	apt-cache search
+	$ apt-get install <package-name>
+	$ apt-get purge --auto-remove <package-name>
+	$ apt-cache search packge
 
-# rsync
+# #rsync
 
 	# recursive
 	rsync -r source/ destination/
@@ -121,7 +125,7 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 	# show progress during transfer
 	rsync --progress source/ destination/
 
-# groups
+# #groups
 
 	# list user in groups
 	groups userName-Here
