@@ -131,3 +131,7 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 	groups userName-Here
 	# List all members of a group using /etc/group file
 	grep 'grpup-name-here' /etc/group
+	
+# #手動向DHCP Server取得IP
+
+	dhclient
