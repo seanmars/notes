@@ -136,7 +136,7 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 
 	dhclient
 
-# #Network
+# #[網路參數設定使用](http://linux.vbird.org/linux_server/0140networkcommand.php#network_setup)
 
 	# 啟用/關閉網路卡	
 	ifup {interface}
