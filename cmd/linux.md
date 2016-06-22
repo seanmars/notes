@@ -135,3 +135,12 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 # #手動向DHCP Server取得IP
 
 	dhclient
+
+# #Network
+
+	# 啟用/關閉網路卡	
+	ifup {interface}
+	ifdown {interface}
+	
+	# check
+	ifconfig
