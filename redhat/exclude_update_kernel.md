@@ -1,5 +1,5 @@
 ```
-# yum update --exclude=kernel*
+# yum update --exclude="kernel* redhat-release* centos-release*"
 ```
 
 or
