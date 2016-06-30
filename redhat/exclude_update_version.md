@@ -1,3 +1,5 @@
+直接使用指令參數
+
 ```
 # yum update --exclude="redhat-release* centos-release*"
 
