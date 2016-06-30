@@ -1,13 +1,15 @@
-如果連 Kernal 都不想要更新則加入 kernel*
+```
+# yum update --exclude="redhat-release* centos-release*"
+
+// 如果連 Kernal 都不想要更新則加入 kernel*
+# yum update --exclude="redhat-release* centos-release* kernel*"
+```
+
+or 如果不想每次都打指令可以在 /etc/yum.conf 加入下列設定
+
 
 ```
-# yum update --exclude="redhat-release* centos-release*( kernel*)"
-```
-
-or
-
-- Add the line below current content in file: /etc/yum.conf
-
-```
-exclude=redhat-release* centos-release*( kernel*)
+exclude=redhat-release* centos-release*
+# // 如果連 Kernal 都不想要更新則加入 kernel*
+exclude=redhat-release* centos-release* kernel*
 ```
