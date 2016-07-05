@@ -19,7 +19,7 @@ yum install httpd -y
 
 # start httpd
 service httpd start
-# setting auto httpd up on boot
+# setting auto startup on boot
 chkconfig httpd on
 ```
 
@@ -49,4 +49,23 @@ yum install php54-php-pecl-xdebug
 /opt/remi/php54/root/usr/bin/php -v
 
 service httpd restart
+```
+
+- Install MySQL 5.6.x
+
+```
+# or get the latest version form mysql official website
+wget http://dev.mysql.com/get/mysql57-community-release-el6-8.noarch.rpm
+yum localinstall mysql57-community-release-el6-8.noarch.rpm
+
+# just ignore this if you want to install 5.7.x
+yum-config-manager --disable mysql57-community
+yum-config-manager --enable mysql56-community
+
+yum update
+yum install mysql-community-server
+
+service mysqld start
+# setting auto startup on boot
+chkconfig mysqld on
 ```
