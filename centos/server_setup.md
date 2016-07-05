@@ -1,4 +1,4 @@
-- Evnironment
+- Environment
   - Centos 6.6
   - Apache 2.2.x
   - PHP 5.4.x
