@@ -23,6 +23,8 @@ iptables -A INPUT -p tcp -m tcp --dport 143 -j ACCEPT
 iptables -A INPUT -p tcp -m tcp --dport 993 -j ACCEPT
 # SSH traffic
 iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+# mysql traffic
+iptables -A INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
 # if only some address use ssh
 # iptables -A INPUT -p tcp -s YOUR_IP_ADDRESS -m tcp --dport 22 -j ACCEPT
 
