@@ -47,6 +47,9 @@ yum install php54-php-pecl-xdebug
 
 # check version
 /opt/remi/php54/root/usr/bin/php -v
+# if want to enable php command
+source /opt/remi/php54/enable
+php -v
 
 service httpd restart
 ```
