@@ -40,7 +40,7 @@ yum-config-manager --enable remi
 yum update
 
 # install php54
-yum install php54 php54-php php54-php-cli php54-php-common php54-php-fpm php54-php-gd php54-php-mbstring php54-php-mcrypt php54-php-mysql php54-php-xml php54-php-xmlrpc php54-php-pecl-yaml php54-php-pecl-msgpack
+yum install php54 php54-php php54-php-cli php54-php-common php54-php-fpm php54-php-gd php54-php-mbstring php54-php-mcrypt php54-php-mysql php54-php-xml php54-php-xmlrpc php54-php-pecl-yaml php54-php-pecl-msgpack php54-php-memcached
 
 # install xdebug
 yum install php54-php-pecl-xdebug
