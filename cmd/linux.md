@@ -67,7 +67,7 @@ Show Running Processes
 
 >
 
-	$ ps aux | less
+	$ ps aux | grep process_name
 
 # #kill
 	
