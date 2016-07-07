@@ -45,6 +45,9 @@ yum install php54 php54-php php54-php-cli php54-php-common php54-php-fpm php54-p
 # install xdebug
 yum install php54-php-pecl-xdebug
 
+# memcached
+yum install libmemcached
+
 # check version
 /opt/remi/php54/root/usr/bin/php -v
 # if want to enable php command
