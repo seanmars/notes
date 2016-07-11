@@ -63,6 +63,7 @@ wget http://dev.mysql.com/get/mysql57-community-release-el6-8.noarch.rpm
 yum localinstall mysql57-community-release-el6-8.noarch.rpm
 
 # just ignore this if you want to install 5.7.x
+yum install yum-utils
 yum-config-manager --disable mysql57-community
 yum-config-manager --enable mysql56-community
 
