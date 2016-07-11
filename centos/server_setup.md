@@ -75,6 +75,14 @@ service mysqld start
 chkconfig mysqld on
 ```
 
+- Setting MySQL
+
+```
+# get random password
+grep 'A temporary password is generated for root@localhost' /var/log/mysqld.log | tail -1
+mysql_secure_installation
+```
+
 - Install Memcached
 
 ```
