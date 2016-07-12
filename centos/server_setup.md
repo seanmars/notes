@@ -78,8 +78,10 @@ chkconfig mysqld on
 - Setting MySQL
 
 ```
-# get random password
-grep 'A temporary password is generated for root@localhost' /var/log/mysqld.log | tail -1
+# get random password if .mysql_secret is exists
+cat /root/.mysql_secret
+
+# init mysql
 mysql_secure_installation
 ```
 
