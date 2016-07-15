@@ -144,3 +144,9 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 	
 	# check
 	ifconfig
+
+# #列出所有Group
+
+```
+cut -d: -f1 /etc/group
+```
