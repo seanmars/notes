@@ -147,6 +147,11 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 
 # #列出所有Group
 
-```
+```bash
 cut -d: -f1 /etc/group
+```
+
+# #Finding out what user Apache is running as?
+```bash
+ps -ef | egrep '(httpd|apache2|apache)' | grep -v `whoami` | grep -v root | head -n1 | awk '{print $1}'
 ```
