@@ -15,4 +15,5 @@ Enforcing
 
 $ sudo vi /etc/sysconfig/selinux     
 SELINUX=disabled
-# 重新開機
+# 重新開機後套用
+```
