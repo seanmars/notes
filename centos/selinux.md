@@ -11,9 +11,8 @@ $ sudo setenforce 1
 $ getenforce
 Enforcing
 
-# 暫時性
-
-$ sudo vi /etc/sysconfig/selinux     
+# 永久性
+$ sudo vi /etc/sysconfig/selinux
 SELINUX=disabled
 # 重新開機後套用
 ```
