@@ -89,7 +89,14 @@ mysql_secure_installation
 
 ```
 yum install memcached libmemcached
+
+# 1.4.14
+yum install -y perl-AnyEvent perl-YAML
+rpm -ivh ftp://rpmfind.net/linux/dag/redhat/el6/en/x86_64/extras/RPMS/memcached-1.4.14-1.el6.rfx.x86_64.rpm
+mkdir /var/run/memcached
+service memcached start
 ```
+
 
 - NOTE:
 
