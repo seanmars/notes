@@ -58,7 +58,7 @@ service httpd restart
 - Install MySQL 5.6.x
 
 ```
-# or get the latest version form mysql official website
+# get the latest version form mysql official website if needed
 wget http://dev.mysql.com/get/mysql57-community-release-el6-8.noarch.rpm
 yum localinstall mysql57-community-release-el6-8.noarch.rpm
 
