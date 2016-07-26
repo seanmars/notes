@@ -88,13 +88,18 @@ mysql_secure_installation
 - Install Memcached
 
 ```
-# install the last form repo of CentOS
-yum install memcached libmemcached
+# install the Remi repository configuration package
+yum install http://rpms.remirepo.net/enterprise/remi-release-6.rpm
 
-# 1.4.14
-yum install -y perl-AnyEvent perl-YAML
-rpm -ivh ftp://rpmfind.net/linux/dag/redhat/el6/en/x86_64/extras/RPMS/memcached-1.4.14-1.el6.rfx.x86_64.rpm
-mkdir /var/run/memcached
+# install the yum-utils package (for the yum-config-manager command)
+yum install yum-utils
+
+# enable the repository
+yum-config-manager --enable remi
+yum update
+
+# install from remi
+yum install memcached libmemcached
 service memcached start
 ```
 
