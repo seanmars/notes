@@ -88,6 +88,7 @@ mysql_secure_installation
 - Install Memcached
 
 ```
+# install the last form repo of CentOS
 yum install memcached libmemcached
 
 # 1.4.14
