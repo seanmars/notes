@@ -155,3 +155,13 @@ cut -d: -f1 /etc/group
 ```bash
 ps -ef | egrep '(httpd|apache2|apache)' | grep -v `whoami` | grep -v root | head -n1 | awk '{print $1}'
 ```
+
+# #List packages
+
+```bash
+# RHEL / Red Hat / CentOS / Fedora Linux based system
+rpm -qa | grep php
+
+# Debian / Ubuntu Linux based system
+dpkg --list | grep php
+```
