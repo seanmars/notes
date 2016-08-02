@@ -165,3 +165,8 @@ rpm -qa | grep php
 # Debian / Ubuntu Linux based system
 dpkg --list | grep php
 ```
+
+# #List port
+```bash
+netstat -tulpn
+```
