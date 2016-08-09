@@ -2,7 +2,7 @@
 
 function usage
 {
-    echo "Usage: prepare -u username -p password [OPTIONS]"
+    echo "Usage: prepare -u username [OPTIONS]"
     echo "  -?, --help, Display this help and exit."
     echo "  -u, User for login."
     echo "  -p, Password to use when connecting to server."
@@ -11,15 +11,17 @@ function usage
     echo "  -P, Port number to use for connection. Default is 3306."
 }
 
+if [ "$#" -le 0 ] ; then
+    usage
+    exit
+fi
+
 DB_USER=
 DB_PSWD=
 DB_HOST=localhost
 DB_PORT=3306
 
-if [ "$#" -le 0 ] ; then
-    usage
-    exit
-fi
+INPUT_PSWD=0
 
 while [ "$1" != "" ]; do
     case $1 in
@@ -30,8 +32,7 @@ while [ "$1" != "" ]; do
         ;;
         # password
         -p | --password )
-        shift
-        DB_PSWD=$1
+        INPUT_PSWD=1
         ;;
         # host
         -h | --host )
@@ -53,6 +54,13 @@ while [ "$1" != "" ]; do
     esac
     shift
 done
+
+if [ ${INPUT_PSWD} = 1 ] ; then
+    # Read Password
+    echo -n Password:
+    read -s DB_PSWD
+    echo
+fi
 
 echo ${DB_USER}
 echo ${DB_PSWD}
