@@ -1,3 +1,4 @@
+```bash
 #!/bin/bash
 
 function usage
@@ -66,3 +67,5 @@ echo ${DB_USER}
 echo ${DB_PSWD}
 echo ${DB_HOST}
 echo ${DB_PORT}
+
+```
