@@ -167,6 +167,13 @@ dpkg --list | grep php
 ```
 
 # #List port
+
 ```bash
 netstat -tulpn
+```
+
+# #Count output
+
+```bash
+cat xxxx | wc -l
 ```
