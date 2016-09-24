@@ -109,7 +109,8 @@ reference: [GPG error: http://ppa.launchpad.net precise Release: The following s
 	$ apt-cache search packge
 
 # #rsync
-
+	-a, --archive 備份模式，以遞迴方式傳輸文件，並保持所有文件屬性
+	
 	# recursive
 	rsync -r source/ destination/
 	# delete extraneous files from destination dirs
