@@ -178,3 +178,8 @@ netstat -tulpn
 ```bash
 cat xxxx | wc -l
 ```
+
+# #Get octal file permissions from command line
+```bash
+stat -c '%A %a %n' *
+```
