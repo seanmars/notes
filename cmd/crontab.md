@@ -40,7 +40,7 @@ crontab -r
 - export
 
 ```bash
-crontab -l cron.txt
+crontab -l > cron.txt
 ```
 
 - import
