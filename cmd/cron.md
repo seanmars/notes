@@ -48,3 +48,9 @@ crontab -l > cron.txt
 ```bash
 crontab cron.txt
 ```
+
+- import mutiple files
+
+```bash
+cat cron1 cron2 | crontab
+```
