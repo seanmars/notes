@@ -39,18 +39,6 @@ ref: [鳥哥的 Linux 私房菜](http://linux.vbird.org/linux_basic/0320bash.php
 
 ==========
 
-# #tree
-tree command installation on a Linux
-
-By default the tree command is not installed. Type the following command to install the same on a RHEL / CentOS / Fedora Linux using yum command:
-# #yum install tree
-
-If you are using Debian / Mint / Ubuntu Linux, type the following apt-get command to install the tree command:
-
-	$ sudo apt-get install tree
-
-==========
-
 # #apt
 
 
