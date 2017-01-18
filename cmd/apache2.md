@@ -1,8 +1,10 @@
-**check which apache modules are enabled/installed**
+# apache2
+
+- check which apache modules are enabled/installed
 
     apache2ctl -M
 
-**start/stop/restart/status/reload**
+- start/stop/restart/status/reload
 
     // start
     // stop
@@ -12,7 +14,7 @@
     /etc/init.d/apache2 xxxx
     service apache2 xxxx
     
-**enable/disable modules**
+- enable/disable modules
 
     a2enmod:
       enables an apache2 module (this does nothing else but creates the proper links to the module .load and .conf files).
