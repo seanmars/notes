@@ -1,6 +1,11 @@
 #!/bin/bash
 
 ##
+# Install:
+#   Copy this script to /usr/bin/ and make it executable.
+##
+
+##
 #  File:
 #    nginx_modsite
 #  Description:
