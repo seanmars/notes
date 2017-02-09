@@ -1,7 +1,5 @@
 # Cheet-sheet
-- ESC, change to command mod
-- i, start input
-- d-d, delete current line
+- https://vim.rtorr.com/
 
 # Command
 - Write, :w
