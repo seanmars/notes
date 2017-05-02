@@ -1,4 +1,4 @@
-# list all pid
+- list all pid
 
 ```sh
 pidof process_name
