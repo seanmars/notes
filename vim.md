@@ -11,10 +11,9 @@
 - `P` to paste the copied or deleted text `before` the current line.
 - `/` search
 - `n` search next
-
-### Move
-- Beginning of line: `^`
-- End of line: `$`
-- First line in file: `1` `G`
-- Go to number line in file: `number` `G`
-- Last line in file: `G`
+- Move
+  - Beginning of line: `^`
+  - End of line: `$`
+  - First line in file: `1` `G`
+  - Go to number line in file: `number` `G`
+  - Last line in file: `G`
