@@ -17,3 +17,9 @@ git branch
 ```bash
 git filter-branch --tree-filter 'rm -rf /path/to/file/or/folder' HEAD
 ```
+
+## reset only one file
+
+```bash
+git checkout HEAD -- file-name
+```
