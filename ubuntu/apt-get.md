@@ -9,6 +9,10 @@ apt-get list --installed
 ```sh
 apt-cache policy <package>
 ```
+or
+```sh
+apt-cache show <package>
+```
 
 - Search
 
