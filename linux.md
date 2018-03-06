@@ -1,13 +1,14 @@
 # Linux Cheat Sheet
 
-### CPU informaitons
+## CPU informaitons
 
 ```
 lscpu
 ```
 
-### OS informaitons
+## System Informaitons
 
 ```
 cat /etc/os-release
+cat /etc/*-release
 ```
