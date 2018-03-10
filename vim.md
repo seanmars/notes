@@ -14,6 +14,6 @@
 - Move
   - Beginning of line: `^`
   - End of line: `$`
-  - First line in file: `1` `G`
-  - Go to number line in file: `number` `G`
-  - Last line in file: `G`
+  - First line in file: gg
+  - Go to number line in file: `number` and then `Shfit + g`
+  - Last line in file: `Shfit + g`
