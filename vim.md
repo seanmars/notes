@@ -10,7 +10,8 @@
 - `p` to paste the copied or deleted text `after` the current line.
 - `P` to paste the copied or deleted text `before` the current line.
 - `/` search
-- `n` search next
+  - `n` search next
+  - `N` search previous
 - Move
   - Beginning of line: `^`
   - End of line: `$`
