@@ -6,8 +6,11 @@ https://www.gnu.org/software/screen/
 # list sessions
 screen -ls
 
-# start a session use bash
+# start a session in detached mode AND use bash
 screen -dmS session-name bash
+
+# kill session
+screen -X -S [session.id] quit
 
 # execute command without attatch
 screen -r "session-name" -X stuff $'ls\n'
