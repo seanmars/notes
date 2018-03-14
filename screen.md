@@ -17,5 +17,5 @@ screen -x session-name
 
 # check is in session or not
 echo $STY # {pid}.session-name or empty
-echo $TERM # screen or xterm
+echo $TERM # screen or xterm (zsh+oh-my-zsh alwasy return xterm)
 ```
