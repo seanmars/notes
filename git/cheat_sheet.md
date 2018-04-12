@@ -23,3 +23,9 @@ git filter-branch --tree-filter 'rm -rf /path/to/file/or/folder' HEAD
 ```bash
 git checkout HEAD -- file-name
 ```
+
+## show history
+
+```bash
+git log --oneline --decorate --all --graph
+```
