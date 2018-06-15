@@ -1,0 +1,14 @@
+version: "3"
+services:
+  server:
+    image: microsoft/dotnet:2.1-sdk
+    restart: "no"
+    ports:
+      - 5000:5000
+    command: bash -c "dotnet clean && dotnet watch run"
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./docker/bin:/app/bin
+      - ./docker/obj:/app/obj
+      - ./docker/nuget:/root/.nuget
