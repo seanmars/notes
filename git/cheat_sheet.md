@@ -80,7 +80,7 @@ git revert -n HEAD
  # After this git will automatically checkout a revision halfway between the known 
  # “good” and “bad” versions. You can now run your specs again and mark the commit as 
  # “good” or “bad” accordingly.
- git bisect good		  # or git bisec bad
+ git bisect good          # or git bisec bad
 ```
 
 
