@@ -77,7 +77,9 @@ git revert -n HEAD
  git bisect bad           # marks the current revision as bad
  git bisect good revision # marks the last known good revision
  
- # After this git will automatically checkout a revision halfway between the known “good” and “bad” versions. You can now run your specs again and mark the commit as “good” or “bad” accordingly.
+ # After this git will automatically checkout a revision halfway between the known 
+ # “good” and “bad” versions. You can now run your specs again and mark the commit as 
+ # “good” or “bad” accordingly.
  git bisect good		  # or git bisec bad
 ```
 
