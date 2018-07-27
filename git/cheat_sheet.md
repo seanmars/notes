@@ -12,6 +12,14 @@ git reset --hard
 git branch
 ```
 
+## git un-track folder
+
+Addd the folder to `.gitignore` file.
+
+```bash
+git rm -r --cached /path/of/folder
+```
+
 ## remove the file and all the histoy of it
 
 ```bash
