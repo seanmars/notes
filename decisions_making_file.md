@@ -10,9 +10,9 @@ Sure, eventually you might reach the point where everything starts making sense,
 
 Before we start the discussion you might take a look into one of possible [decisions.md](https://github.com/zshamrock/stonesgame.io/blob/master/decisions.md) in action.
 
-# What
+## What
 
-What should you document. It is all about **Why**, **Alternatives**, **Risks** :
+What should you document. It is all about **Why, Alternatives, Risks**:
 
 - **Why** that specific decision was made (even if it was just a personal taste, make it clear)
 - What were the **alternatives** considered (it is ok to state that no alternatives were considered at all, this is still valid, as it is clear for everybody now that this was a deliberate choice)
@@ -30,7 +30,7 @@ What exact decisions could be? The rule of thumb - anything you consider importa
 - testing framework
 - provisioning and deployment
 - hosting
-- CI/CD (Continuous Integration/Continous Delivery)
+- CI/CD
 - application/http server
 - persistence storage (which database and why)
 - caching
@@ -38,21 +38,21 @@ What exact decisions could be? The rule of thumb - anything you consider importa
 
 If you don't have a specific decision yet made regards some of the aspects mentioned above (and they are relevant to your project), it still makes sense to say it explicitly, that this area is important and will require some revisiting later in the project's stage. Again it is all about transparency.
 
-# How
+## How
 
 Keep it simple. Markdown or any human readable/friendly format will do the job. It is good to put a date when you add the entries into the file, like "Sun 1 Nov, 2015".
 
 It should be part of your source code, so every developer can easy access it, and track the history.
 
-Never change anythig, but append only! Do not try to change the past, if you have to change the decision you made before, just make a new decision and document it, keeping the old there as well, so the progress, and thinking process will stay visible.
+**Never change anythig, but append only!** Do not try to change the past, if you have to change the decision you made before, just make a new decision and document it, keeping the old there as well, so the progress, and thinking process will stay visible.
 
 And this imperfection is what makes this document so valuable.
 
-# When
+## When
 
 Whenever the new important decision or step was made. When you feel comfortable and have time to do so. But, never postpone it for too long, as there is a danger, that then it will not reflect the exact thinking process you had in the moment of making the decision.
 
-# Ok, if it is so cool, why nobody does it?
+## Ok, if it is so cool, why nobody does it?
 
 Good question ;) I can't answer for sure, I can only guess. I think it is fear:
 
@@ -62,7 +62,7 @@ Good question ;) I can't answer for sure, I can only guess. I think it is fear:
 - fear of transparency, that you are no longer the source of "secret" data and privileged access
 - fear of taking responsibilities of the decisions made
 
-# Give it a try
+## Give it a try
 
 In the early beginning of the project, with lack of the information, it is difficult to make the right decisions. So, the goal is don't waste the time, and either make the reasonable decisions if possible (to provide a roadmap) or postpone it until more information and more important understanding is revealed.
 
