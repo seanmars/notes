@@ -3,6 +3,7 @@
 ## CPU informaitons
 
 ```sh
+# Need install util-linux*
 lscpu
 ```
 
