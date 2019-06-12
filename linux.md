@@ -24,3 +24,13 @@ du [OPTION] [FILE]
 ```sh
 script > /dev/null 2>&1
 ```
+
+## Empty file
+
+```sh
+truncate -s 0 path-of-filename
+# Or
+:> path-of-filename
+# Or
+echo > filename
+```
