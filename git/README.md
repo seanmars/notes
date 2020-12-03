@@ -1,12 +1,12 @@
 # Git Cheat Sheet
 
-## removes staged and working directory changes
+## Removes staged and working directory changes
 
 ```bash
 git reset --hard
 ```
 
-## get the current branch name
+## Get the current branch name
 
 ```bash
 git branch
@@ -23,13 +23,13 @@ git rm --cached </path/of/file>
 git rm -r --cached </path/of/folder>
 ```
 
-## remove the file and all the histoy of it
+## Remove the file and all the histoy of it
 
 ```bash
 git filter-branch --tree-filter 'rm -rf /path/to/file/or/folder' HEAD
 ```
 
-## reset only one file
+## Reset only one file
 
 ```bash
 git checkout HEAD -- <file-name>
@@ -41,10 +41,16 @@ git checkout HEAD -- <file-name>
 git push  <REMOTENAME> <BRANCHNAME> 
 ```
 
-## show history
+## Show history
 
 ```bash
-git log --oneline --decorate --all --graph
+# Show last 10 commit with graph
+git log --oneline --decorate --all --graph -n10
+```
+
+```bash
+# Show only last commit in one line
+git --no-pager log --decorate=short --pretty=oneline -n1
 ```
 
 ## Discard local file modifications
