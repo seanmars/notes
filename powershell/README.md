@@ -1,6 +1,7 @@
 # PowerShell Awesome
 
-[create key](powershell#create-key)
+- [create key](#create-key)
+- [touch a file](#touch-a-file)
 
 ## create key
 
