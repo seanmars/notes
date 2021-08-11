@@ -1,6 +1,8 @@
 # PowerShell Awesome
 
-## Create key
+[create key](powershell#create-key)
+
+## create key
 
 ```ps1
 param (
