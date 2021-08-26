@@ -11,7 +11,14 @@ lscpu
 
 ```sh
 cat /etc/os-release
+# or
 cat /etc/*-release
+# or
+uname -a
+# or
+hostnamectl
+# or
+cat /proc/version
 ```
 
 ## Disk Usage
