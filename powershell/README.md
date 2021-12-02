@@ -5,6 +5,7 @@
 
 ## create key
 
+`create-key.ps1`
 ```ps1
 param (
     [Parameter(Mandatory = $True)]
@@ -44,6 +45,38 @@ function X509ToPkcs12 {
 
 CreateX509 -config $config -x509Name $x509Name
 X509ToPkcs12 -x509Name $x509Name -pkcs12Name $pfxName -password $password
+```
+
+`ssl.conf`
+```conf
+[req]
+prompt = no
+default_md = sha256
+default_bits = 2048
+distinguished_name = dn
+x509_extensions = v3_req
+
+[dn]
+C = TW
+ST = Taiwan
+L = Taipei
+O = Chinese Gamer International Co.
+OU = RD Department
+emailAddress = admin@chinesegamer.net
+CN = localhost
+
+[v3_req]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = *.localhost
+DNS.2 = localhost
+```
+
+### How to use
+
+```sh
+create-key.ps1 ssl.conf crtFileName pfxFileName
 ```
 
 ## touch a file
