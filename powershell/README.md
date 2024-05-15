@@ -3,6 +3,36 @@
 - [create key](#create-key)
 - [touch a file](#touch-a-file)
 
+## where
+
+```ps1
+function Get-CommandPath {
+    param (
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true, Position=0)]
+        [string]$Command
+    )
+
+    process {
+        try {
+            $commandInfo = Get-Command -Name $Command -ErrorAction Stop
+            $commandPath = $commandInfo.Source
+            if ($commandPath) {
+                Write-Output $commandPath
+            } else {
+                Write-Output "The command '$Command' was found but it doesn't have a specific path."
+            }
+        } catch {
+            Write-Error "The command '$Command' was not found."
+        }
+    }
+}
+
+Set-Alias -Name gcp -Value Get-CommandPath
+
+# ex
+gcp git
+```
+
 ## create key
 
 `create-key.ps1`
